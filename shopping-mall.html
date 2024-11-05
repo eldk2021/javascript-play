@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 쇼핑몰</title>
+    <link rel="stylesheet" href="shopping-mall.css">
+    <style>
+
+       
+    </style>
+
+    <script>
+        window.addEventListener("load",function(){
+            let shoppingSection = document.querySelector("#s-shopping-mall");
+            let btnBlue = shoppingSection.querySelector(".blue");
+            let btnYellow = shoppingSection.querySelector(".yellow");
+            let btnPink = shoppingSection.querySelector(".pink");
+
+            btnBlue.onclick = function(e){
+                e.preventDefault();
+
+                if(e.target.nodeName == "A"){
+                    console.log("블루")
+
+                }
+            };
+
+            btnYellow.onclick = function(e){
+                e.preventDefault();
+                console.log("btnYellow")
+            };
+
+            btnPink.onclick = function(e){
+                e.preventDefault();
+                console.log("btnPink")
+            };
+
+        });
+    </script>
+</head>
+<body>
+    <!-- 목표: 총 1시간, 자바스크립트 100줄 -->
+
+    <section id="s-shopping-mall">
+        <h1 class="d-none">로고</h1>
+        <section class="category">
+            <h1 class="d-none">카테고리</h1>
+            <ul class="l-style:none">
+                <li class="f-grow"><a href="">male, large size</a></li>
+                <li class="f-grow"><a href="">man, small size</a></li>
+                <li class="f-grow"><a href="">femil, small size</a></li>
+            </ul>
+            <ul class="l-style:none">
+                <li class="f-grow"><a class="btn-default blue" href="">Blue</a></li>
+                <li class="f-grow"><a class="btn-default yellow" href="">Yellow</a></li>
+                <li class="f-grow"><a class="btn-default pink" href="">Pink</a></li>
+                
+            </ul>
+
+        </section>
+        <section class="c-list">
+            <h1 class="d-none">리스트</h1>
+            <ul class="l-style:none">
+                <li>man, small size</li>
+                <li>female, smal size</li>
+                <li>male, large size</li>
+                <li>man, small size</li>
+                <li>female, small size</li>
+                <li>male, large size</li>
+            </ul>
+        </section>
+    </section>
+    
+</body>
+</html>
